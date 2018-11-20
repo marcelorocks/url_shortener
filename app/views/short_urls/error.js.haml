@@ -1,2 +1,7 @@
 :plain
-  alert('Error: #{@short_url.errors.full_messages.join(', ')}')
+  $('.clipboard-link-container').hide()
+  $('.short-url-container').hide()
+  $('.error-container').show()  
+  $('.modal-title').html('Error')
+  $('.error-container').html('#{@short_url.errors.full_messages.join(', ')}')
+  $('#modal').modal()

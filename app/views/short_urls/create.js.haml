@@ -1,5 +1,8 @@
 :plain
+  $('.error-container').hide()
   $('.clipboard-link-container').show()
+  $('.short-url-container').show()
   $('.modal-title').html('Your short url is here')
-  $('.short-url-container').html('#{translate_url(@short_url.short_hash)}')
+  $('.short-url-link').text('#{translate_url(@short_url.short_hash)}')
+  $('.short-url-link').attr('href', '#{translate_url(@short_url.short_hash)}')
   $('#modal').modal()

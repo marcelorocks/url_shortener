@@ -9,7 +9,7 @@ const copyToClipboard = str => {
 
 $(function() {
   $('.clipboard-link').click(function() {
-    var url = $('.short-url-container').text()
+    var url = $('.short-url-link').text()
     copyToClipboard(url)
     alert('Successfully copied to clipboad.')
   })

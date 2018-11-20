@@ -49,6 +49,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'cucumber'
   gem 'cucumber-rails', require: false
+  gem 'database_cleaner'  
   gem 'rspec'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
