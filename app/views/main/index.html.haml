@@ -1,0 +1,48 @@
+.container-fluid
+  .row
+    .col-md-12
+      #carousel-755385.carousel.slide
+        .carousel-inner
+          .carousel-item.active
+            %img.d-block.w-100{:alt => "Create your Short Url", src: 'https://www.layoutit.com/img/sports-q-c-1600-500-2.jpg'}/
+            .carousel-caption
+              %h4
+                Create your Short Url Now
+              %p
+                Start by entering your long URL above
+            .shortener-form
+              .row
+                .col-md-2
+                .col-md-8
+                  = form_for @short_url, remote: true do |f|
+                    .form-group
+                      = f.text_field :original_url, placeholder: 'Enter your url here...', class: 'form-control'
+                    .form-group
+                      = f.submit 'Create', class: 'btn btn-info'
+                .col-md-2
+  .row
+    .col-md-12.spacer
+  .row
+    .col-md-1
+    .col-md-3
+      %h2
+        Unique
+      %p
+        The best invention since Jimmy Kimmel's idea that parents should tell kids they ate their Halloween candy.
+      %p
+        You will find that Dia&Co Url shortener is the best one you will find on the web. But don't take our word for it. Create your own in a few seconds!
+    .col-md-4
+      %h2
+        Charming
+      %p
+        Short Urls of all colors and flavors.
+      %p
+        Our hashes are irresistible. One per url: fast access every time. We are a 100% free service, money back guarantee!
+    .col-md-3
+      %h2
+        Testimonials
+      %p
+        "Since I first used Dia&Co URL shortener, I never wanted to go back to any other service. It is really inspiring and innovative" - Barack Obama
+      %p
+        "Dia&Co URL Shortener is so good... it made url shortening great again. It's really huge, covfefe" - Donald Trump
+    .col-md-1

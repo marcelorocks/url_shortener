@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+.logo {
+  width: 140px;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.shortener-form {
+  position: absolute;
+  bottom: 160px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel-item, .carousel-item %img {
+  min-height: 300px;
+}
