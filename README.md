@@ -1,14 +1,18 @@
 ### Url Shortener
 
-##### 1. Introduction
+#### 1. Introduction
 
 This project stores original urls in Redis, and redirects the user to the oringal url from http://localhost:3000/:hash
 
-##### 2. Setup
+#### 2. Setup
 
 Make sure you have redis installed:
 
     brew install redis
+
+Run bundle to install dependencies
+
+    bundle
 
 Run the specs:
 
