@@ -1,2 +1,5 @@
 :plain
-  alert('Created all good: #{translate_url(@short_url.short_hash)}')
+  $('.clipboard-link-container').show()
+  $('.modal-title').html('Your short url is here')
+  $('.short-url-container').html('#{translate_url(@short_url.short_hash)}')
+  $('#modal').modal()

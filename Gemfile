@@ -47,6 +47,8 @@ end
 group :test do
   gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
+  gem 'cucumber'
+  gem 'cucumber-rails', require: false
   gem 'rspec'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
