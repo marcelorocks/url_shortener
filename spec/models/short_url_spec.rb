@@ -9,8 +9,14 @@ RSpec.describe ShortUrl, type: :model do
   end
 
   it 'should fail if no original url is given' do
-    s = ShortUrl.new
-    expect(s).to_not be_valid
+    s1 = ShortUrl.new(original_url: 'http://www.google.com')
+    expect(s1).to be_valid
+    s2 = ShortUrl.new(original_url: 'https://www.google.com?param=true')
+    expect(s2).to be_valid
+    s3 = ShortUrl.new
+    expect(s3).to_not be_valid
+    s4 = ShortUrl.new(original_url: 'okie-dokie')
+    expect(s4).to_not be_valid
   end
 
   it 'should increment hits for metrics' do

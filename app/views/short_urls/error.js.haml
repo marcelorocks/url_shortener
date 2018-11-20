@@ -1,2 +1,2 @@
 :plain
-  alert('There was an error')
+  alert('Error: #{@short_url.errors.full_messages.join(', ')}')

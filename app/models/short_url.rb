@@ -3,8 +3,10 @@ class ShortUrl
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
+  URL_PATTERN = /(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/ix
+
   attr_accessor :original_url, :short_hash, :hits
-  validates :original_url, presence: true
+  validates :original_url, presence: true, format: { with: URL_PATTERN }
 
   class RecordNotFound < StandardError; end
 

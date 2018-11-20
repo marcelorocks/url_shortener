@@ -5,9 +5,11 @@ class ShortUrlsController < ApplicationController
       @short_url.save
       render 'create'
     else
-      render 'error'
+      render 'error', status: 422
     end
   end
+
+  protected
 
   def short_url_params
     params.require(:short_url).permit(:original_url)
