@@ -1,24 +1,25 @@
-# README
+### Url Shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### 1. Introduction
 
-Things you may want to cover:
+This project stores original urls in Redis, and redirects the user to the oringal url from http://localhost:3000/:hash
 
-* Ruby version
+##### 2. Setup
 
-* System dependencies
+Make sure you have redis installed:
 
-* Configuration
+    brew install redis
 
-* Database creation
+Run the specs:
 
-* Database initialization
+    rspec spec
 
-* How to run the test suite
+Run cucumber scenarios:
 
-* Services (job queues, cache servers, search engines, etc.)
+    cucumber
 
-* Deployment instructions
+Run the server:
 
-* ...
+    rails s
+
+And visit http://localhost:3000
